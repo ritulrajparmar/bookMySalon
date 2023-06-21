@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BookMySelon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="semi-circle"></div>
+    <div class="top-bar">
+        <div class="menu">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        <div class="address">
+            <p>Area</p>
+        </div>
+        <div class="profile">
+            <img src="img6.jpg">
+        </div>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel">
+          <img src="bg-image.svg" alt="Image 1">
+          <img src="https://media.discordapp.net/attachments/732830974177443861/1120802726914314330/image.png?width=982&height=610" alt="Image 2">
+          <img src="https://media.discordapp.net/attachments/732830974177443861/1120802726914314330/image.png?width=982&height=610" alt="Image 3">
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-bottom: 1%; margin-top:3%; " >
+
+        <h1 style="margin-left:9% ; font-weight: bold;">Nearby Salons
+            <a class="btn" href="#" style="margin-right:7%;border-color:#c4c4c4; color: #8b85c1; border-radius:60px ; float: right; padding:9px 33px ; font-size: 24px; line-height: 17px;"> View More</a>
+        </h1>
+    </div>
+
+    <div class="cards">
+    <div class="product-card">
+        <div class="image-container">
+          <img src="img1.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="title">SRB Unisex Salon</h2>
+          <div class="location">Product Location</div>
+          <div class="tags">
+            <button class="tag">Haircut</button>
+            <button class="tag">Beard Cut</button>
+            <button class="tag">Facial Massage</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+          <img src="img2.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="title">Salon Title</h2>
+          <div class="location">Salon Location</div>
+          <div class="tags">
+            <button class="tag">Haircut</button>
+            <button class="tag">Beard Cut</button>
+            <button class="tag">Facial Massage</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+          <img src="img3.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="title">Salon Title</h2>
+          <div class="location">Salon Location</div>
+          <div class="tags">
+            <button class="tag">Haircut</button>
+            <button class="tag">Beard Cut</button>
+            <button class="tag">Facial Massage</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+          <img src="img3.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="title">Salon Title</h2>
+          <div class="location">Salon Location</div>
+          <div class="tags">
+            <button class="tag">Haircut</button>
+            <button class="tag">Beard Cut</button>
+            <button class="tag">Facial Massage</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid" style="margin-bottom: 1%; margin-top:3%; " >
+
+        <h1 style="margin-left:9% ; font-weight: bold;">Services</h1>
+    </div>
+
+    <div class="cards">
+        <div class="product-card">
+            <div class="image-container">
+              <img src="img5.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+              <h2 class="title">Hair Straightening</h2>
+              <div class="location">₹3,500 Approx.</div>
+            </div>
+          </div>
+        <div class="product-card">
+            <div class="image-container">
+              <img src="img5.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+              <h2 class="title">Hair Straightening</h2>
+              <div class="location">₹3,500 Approx.</div>
+            </div>
+          </div>
+        <div class="product-card">
+            <div class="image-container">
+              <img src="img5.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+              <h2 class="title">Hair Straightening</h2>
+              <div class="location">₹3,500 Approx.</div>
+            </div>
+          </div>
+
+        </div>
+
+
+	<div class="navbar-bottom">
+		<ul>
+			<li class="list-item active"><a href="#"><i class="fa-solid fa-compass"></i></a></li>
+			<li class="list-item"><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+			<li class="list-item"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            <li class="list-item"><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+		</ul>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+	<script src="scripts.js"></script>
+</body>
+</html>
